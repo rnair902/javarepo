@@ -1,0 +1,12 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "sites_hxahpi_name": {
+            "value": "ghsxal"
+        },
+      "serverfarms_ASP_rsgroup_b3e8_externalid": {
+        "value": "/subscriptions/de7aad7d-dc4f-46e6-a145-f90fb9a75b79/resourceGroups/rsgroup/providers/Microsoft.Web/serverfarms/ASP-rsgroup-b3e8"
+      }
+    }
+}

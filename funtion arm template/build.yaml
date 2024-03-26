@@ -1,0 +1,19 @@
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(agent.builddirectory)'
+    Contents: '**'
+    TargetFolder: '$(build.arctifactsagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(build.arctifactsagingdirectory)'
+    ArtifactName: 'vksvms'
+    publishLocation: 'Container'
+    first change
